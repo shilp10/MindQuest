@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:"http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.shilp.myapplication" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/app_name" android:name="com.example.shilp.myapplication.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MapScreen" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.Logic_Edge_Level_Page" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.Lock1" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.Wrong_Answer" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_map_screen" android:name="com.example.shilp.myapplication.MapScreen" android:parentActivityName="com.example.shilp.myapplication.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.MainActivity" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_logics__edge__level__page" android:name="com.example.shilp.myapplication.Logics_Edge_Level_Page" android:parentActivityName="com.example.shilp.myapplication.MapScreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.MapScreen" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_lock1" android:name="com.example.shilp.myapplication.Lock1" android:parentActivityName="com.example.shilp.myapplication.Logics_Edge_Level_Page">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Logics_Edge_Level_Page" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_wrong__answer" android:name="com.example.shilp.myapplication.Wrong_Answer" android:parentActivityName="com.example.shilp.myapplication.Lock1">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Lock1" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_correct__answer" android:name="com.example.shilp.myapplication.Correct_Answer" android:parentActivityName="com.example.shilp.myapplication.Lock1">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Lock1" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_le_gate2" android:name="com.example.shilp.myapplication.LE_gate2" android:parentActivityName="com.example.shilp.myapplication.Correct_Answer">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Correct_Answer" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_lock_2" android:name="com.example.shilp.myapplication.Lock_2" android:parentActivityName="com.example.shilp.myapplication.Logics_Edge_Level_Page">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Logics_Edge_Level_Page" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_correct__answer2" android:name="com.example.shilp.myapplication.Correct_Answer2" android:parentActivityName="com.example.shilp.myapplication.Lock_2">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Lock_2" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_le_gate3" android:name="com.example.shilp.myapplication.le_gate3" android:parentActivityName="com.example.shilp.myapplication.Correct_Answer2">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Correct_Answer2" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_lock_3" android:name="com.example.shilp.myapplication.lock_3" android:parentActivityName="com.example.shilp.myapplication.le_gate3">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.le_gate3" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_correct_answer3" android:name="com.example.shilp.myapplication.correct_answer3" android:parentActivityName="com.example.shilp.myapplication.lock_3">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.lock_3" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_le_gate4" android:name="com.example.shilp.myapplication.le_gate4" android:parentActivityName="com.example.shilp.myapplication.correct_answer3">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.correct_answer3" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_gatekeeper_level" android:name="com.example.shilp.myapplication.gatekeeper_level" android:parentActivityName="com.example.shilp.myapplication.le_gate4">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.le_gate4" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_level1__complete" android:name="com.example.shilp.myapplication.Level1_Complete" android:parentActivityName="com.example.shilp.myapplication.gatekeeper_level">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.gatekeeper_level" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_boss__fail" android:name="com.example.shilp.myapplication.BOSS_FAIL" android:parentActivityName="com.example.shilp.myapplication.gatekeeper_level">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.gatekeeper_level" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_wrong__answer2" android:name="com.example.shilp.myapplication.Wrong_Answer2" android:parentActivityName="com.example.shilp.myapplication.Lock_2">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.Lock_2" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_wrong__answer3" android:name="com.example.shilp.myapplication.Wrong_Answer3" android:parentActivityName="com.example.shilp.myapplication.lock_3">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.lock_3" />
+        </activity>
+        <activity android:theme="@style/AppTheme_NoActionBar" android:label="@string/title_activity_help_screen" android:name="com.example.shilp.myapplication.HelpScreen" android:parentActivityName="com.example.shilp.myapplication.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.shilp.myapplication.MainActivity" />
+        </activity>
+    </application>
+</manifest>
