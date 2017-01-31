@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:background="@drawable/gate" app:paddingLeft="@dimen/activity_horizontal_margin" app:paddingTop="@dimen/activity_vertical_margin" app:paddingRight="@dimen/activity_horizontal_margin" app:paddingBottom="@dimen/activity_vertical_margin" app:layout_width="-1" app:layout_height="-1" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView app:textAppearance="?unknown_attr_ref: 1010040" app:textSize="40dp" app:id="@id/textView" app:layout_width="-2" app:layout_height="-2" app:text="Logic's Edge" app:layout_alignParentTop="true" app:layout_centerHorizontal="true" />
+    <Button app:textSize="24dp" app:id="@id/LE_level_1" app:background="#9608fa29" app:layout_width="-2" app:layout_height="-2" app:text="Lock 1" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+    <Button app:textSize="24dp" app:id="@id/LE_level_2" app:background="#9608fa29" app:layout_width="-2" app:layout_height="-2" app:text="Lock 2" app:layout_alignTop="@id/LE_level_1" app:layout_centerHorizontal="true" />
+    <Button app:textSize="24dp" app:id="@id/LE_level_3" app:background="#9608fa29" app:layout_width="-2" app:layout_height="-2" app:text="Lock 3" app:layout_alignTop="@id/LE_level_2" app:layout_alignParentRight="true" />
+    <Button app:textSize="24dp" app:textColor="#aa0909" app:id="@id/LE_Boss_Button" app:background="#96a09e9e" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="74dp" app:text="GateKeeper's Riddle" app:layout_alignRight="@id/LE_level_3" app:layout_alignParentLeft="true" app:layout_alignParentBottom="true" />
+</RelativeLayout>
